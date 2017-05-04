@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="customView" destination="2rl-YC-82W" id="2oe-7S-mFc"/>
+                <outlet property="locationButton" destination="zXm-mR-L76" id="0nT-aO-8CX"/>
+                <outlet property="locationLabel" destination="Owm-Pf-gXz" id="kf3-1l-8My"/>
+                <outlet property="mapView" destination="3Ot-Ke-Wpl" id="2gF-Aw-G9J"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dzl-Sg-iJ5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ot-Ke-Wpl">
+                    <rect key="frame" x="5" y="5" width="365" height="657"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pet-ee-dfz"/>
+                    </connections>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Ot-Ke-Wpl" secondAttribute="trailing" constant="5" id="8Zh-GV-Zqn"/>
+                <constraint firstItem="3Ot-Ke-Wpl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Drd-F6-9Vl"/>
+                <constraint firstAttribute="bottom" secondItem="3Ot-Ke-Wpl" secondAttribute="bottom" constant="5" id="gXv-0m-YpF"/>
+                <constraint firstItem="3Ot-Ke-Wpl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="zXI-bG-xfc"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="2rl-YC-82W">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-mR-L76">
+                    <rect key="frame" x="0.0" y="0.0" width="101" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="popup_map">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="locationClicked:" destination="-1" eventType="touchUpInside" id="hWV-or-0ZM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-Pf-gXz">
+                    <rect key="frame" x="15" y="5" width="56" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zXm-mR-L76" secondAttribute="trailing" id="04p-qW-UIN"/>
+                <constraint firstItem="zXm-mR-L76" firstAttribute="leading" secondItem="2rl-YC-82W" secondAttribute="leading" id="2bo-Yp-53X"/>
+                <constraint firstItem="Owm-Pf-gXz" firstAttribute="top" secondItem="2rl-YC-82W" secondAttribute="top" constant="5" id="NeB-pt-dhd"/>
+                <constraint firstItem="zXm-mR-L76" firstAttribute="top" secondItem="2rl-YC-82W" secondAttribute="top" id="gpt-8D-q7I"/>
+                <constraint firstItem="Owm-Pf-gXz" firstAttribute="leading" secondItem="2rl-YC-82W" secondAttribute="leading" constant="15" id="ihk-fX-cwu"/>
+                <constraint firstAttribute="bottom" secondItem="Owm-Pf-gXz" secondAttribute="bottom" constant="5" id="rUe-0s-5Gc"/>
+                <constraint firstAttribute="trailing" secondItem="Owm-Pf-gXz" secondAttribute="trailing" constant="30" id="rmn-gE-Eo0"/>
+                <constraint firstAttribute="bottom" secondItem="zXm-mR-L76" secondAttribute="bottom" id="tnB-gu-RdE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="333.5" y="-52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_map" width="92" height="82"/>
+    </resources>
+</document>
