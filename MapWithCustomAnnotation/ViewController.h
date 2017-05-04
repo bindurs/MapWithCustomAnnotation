@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
-#import "MyMapViewAnnotation.h"
-#import "MyMapAnnotationView.h"
 #import "DetailsViewController.h"
 #import "AdListAnnotation.h"
 #import "AdListAnnotationView.h"

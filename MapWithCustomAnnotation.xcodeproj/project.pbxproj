@@ -16,8 +16,6 @@
 		F40AE35E1EB9F97100BF9791 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40AE35D1EB9F97100BF9791 /* ViewController.xib */; };
 		F40AE3611EB9FA4600BF9791 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40AE3601EB9FA4600BF9791 /* CoreLocation.framework */; };
 		F40AE3631EB9FA6500BF9791 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40AE3621EB9FA6500BF9791 /* MapKit.framework */; };
-		F40AE3661EB9FE3600BF9791 /* MyMapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F40AE3651EB9FE3600BF9791 /* MyMapViewAnnotation.m */; };
-		F40AE3691EBA0AC700BF9791 /* MyMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40AE3681EBA0AC700BF9791 /* MyMapAnnotationView.m */; };
 		F439CA9C1EBAE33100CE74FA /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CA9A1EBAE33100CE74FA /* DetailsViewController.m */; };
 		F439CA9D1EBAE33100CE74FA /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F439CA9B1EBAE33100CE74FA /* DetailsViewController.xib */; };
 		F439CAD31EBAEB9F00CE74FA /* AdAddAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CACC1EBAEB9F00CE74FA /* AdAddAnnotation.m */; };
@@ -40,10 +38,6 @@
 		F40AE35D1EB9F97100BF9791 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		F40AE3601EB9FA4600BF9791 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F40AE3621EB9FA6500BF9791 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		F40AE3641EB9FE3600BF9791 /* MyMapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapViewAnnotation.h; sourceTree = "<group>"; };
-		F40AE3651EB9FE3600BF9791 /* MyMapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapViewAnnotation.m; sourceTree = "<group>"; };
-		F40AE3671EBA0AC700BF9791 /* MyMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotationView.h; sourceTree = "<group>"; };
-		F40AE3681EBA0AC700BF9791 /* MyMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotationView.m; sourceTree = "<group>"; };
 		F439CA991EBAE33100CE74FA /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F439CA9A1EBAE33100CE74FA /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F439CA9B1EBAE33100CE74FA /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
@@ -101,10 +95,6 @@
 				F40AE3541EB9F8B900BF9791 /* LaunchScreen.storyboard */,
 				F40AE3571EB9F8B900BF9791 /* Info.plist */,
 				F40AE3461EB9F8B900BF9791 /* Supporting Files */,
-				F40AE3641EB9FE3600BF9791 /* MyMapViewAnnotation.h */,
-				F40AE3651EB9FE3600BF9791 /* MyMapViewAnnotation.m */,
-				F40AE3671EBA0AC700BF9791 /* MyMapAnnotationView.h */,
-				F40AE3681EBA0AC700BF9791 /* MyMapAnnotationView.m */,
 				F439CA991EBAE33100CE74FA /* DetailsViewController.h */,
 				F439CA9A1EBAE33100CE74FA /* DetailsViewController.m */,
 				F439CA9B1EBAE33100CE74FA /* DetailsViewController.xib */,
@@ -230,10 +220,8 @@
 				F40AE34E1EB9F8B900BF9791 /* ViewController.m in Sources */,
 				F439CAD41EBAEB9F00CE74FA /* AdListAnnotation.m in Sources */,
 				F40AE34B1EB9F8B900BF9791 /* AppDelegate.m in Sources */,
-				F40AE3661EB9FE3600BF9791 /* MyMapViewAnnotation.m in Sources */,
 				F439CA9C1EBAE33100CE74FA /* DetailsViewController.m in Sources */,
 				F439CAD31EBAEB9F00CE74FA /* AdAddAnnotation.m in Sources */,
-				F40AE3691EBA0AC700BF9791 /* MyMapAnnotationView.m in Sources */,
 				F40AE3481EB9F8B900BF9791 /* main.m in Sources */,
 				F439CAD51EBAEB9F00CE74FA /* AdListAnnotationView.m in Sources */,
 			);
